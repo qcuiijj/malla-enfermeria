@@ -1,1 +1,52 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
+h1 {
+  color: #006666;
+  text-align: center;
+}
+
+h2 {
+  color: #004d4d;
+  margin-top: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.ramo {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.codigo {
+  font-size: 0.8em;
+  color: #888;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.estado {
+  font-weight: bold;
+  margin-top: 6px;
+  color: #999;
+}
+
+.aprobado .estado {
+  color: green;
+}
+.cursando .estado {
+  color: blue;
+}
+.reprobado .estado {
+  color: red;
+}
