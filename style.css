@@ -10,4 +10,3 @@ function toggleEstado(ramo) {
   ramo.classList.remove("pendiente", "cursando", "aprobado", "reprobado");
   ramo.classList.add(estados[index].toLowerCase());
 }
-
