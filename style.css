@@ -1,1 +1,13 @@
+function toggleEstado(ramo) {
+  const estados = ["Pendiente", "Cursando", "Aprobado", "Reprobado"];
+  const estadoElem = ramo.querySelector(".estado");
+  let actual = estadoElem.innerText;
+  let index = estados.indexOf(actual);
+  index = (index + 1) % estados.length;
+  estadoElem.innerText = estados[index];
+
+  // Resetear clases anteriores
+  ramo.classList.remove("pendiente", "cursando", "aprobado", "reprobado");
+  ramo.classList.add(estados[index].toLowerCase());
+}
 
